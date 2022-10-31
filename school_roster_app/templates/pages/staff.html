@@ -1,0 +1,18 @@
+<!-- school_roster_app/templates/pages/staff.html -->
+<html>
+  <head>
+    <title>Staff Page</title>
+  </head>
+  <body>
+    <h2>Staff Directory</h2>
+    {% if staff_list %}
+    <ul>
+        {% for staff in staff_list %}
+        <li><a href="{{staff.employee_id}}/">{{staff.name}}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>List didn't load.</p>
+    {% endif %}
+  </body>
+</html>

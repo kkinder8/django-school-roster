@@ -1,0 +1,21 @@
+<!-- school_roster_app/templates/pages/staffdetail.html -->
+<html>
+  <head>
+    <title>Staff Detail Page</title>
+  </head>
+  <body>
+    <h2>Staff Details</h2>
+    {% if employee %}
+    <ul>
+        
+        <li>Name: {{employee.name}}</li>
+        <li>Age: {{employee.age}}</li>
+        <li>Role: {{employee.role}}</li>
+        <li>Employee ID: {{employee.employee_id}}</li>
+       
+    </ul>
+    {% endif %}
+  </body>
+</html>
+
+

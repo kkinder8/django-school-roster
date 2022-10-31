@@ -1,0 +1,19 @@
+<!-- school_roster_app/templates/pages/studentdetail.html -->
+<html>
+  <head>
+    <title>Student Detail Page</title>
+  </head>
+  <body>
+    <h2>Student Details</h2>
+    {% if student %}
+    <ul>
+        
+        <li>Name: {{student.name}}</li>
+        <li>Age: {{student.age}}</li>
+        <li>Role: {{student.role}}</li>
+        <li>Student ID: {{student.school_id}}</li>
+       
+    </ul>
+    {% endif %}
+  </body>
+</html>
